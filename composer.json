@@ -1,0 +1,31 @@
+{
+  "require": {
+    "phpmailer/phpmailer": "^6.5.0",
+    "psr/log": "^1.1",
+    "symfony/console": "^5.0",
+    "illuminate/database": "^6.20.26",
+    "latte/latte": "^2.8"
+  },
+  "autoload": {
+    "files": [
+      "app/config/config.php",
+      "app/config/config_env.php",
+      "app/helpers/general_helper.php",
+      "app/helpers/email.php",
+      "app/helpers/validation.php"
+    ],
+    "psr-4": {
+      "Console\\": "src",
+      "App\\": "app/"
+    },
+    "classmap": [
+      "src"
+    ]
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^5.0",
+    "psy/psysh": "@stable",
+    "maximebf/debugbar": "1.*",
+    "fakerphp/faker": "^1.13"
+  }
+}
